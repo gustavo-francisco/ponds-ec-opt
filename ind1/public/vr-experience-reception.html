@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-assets>
+            <img id="img2" src="./recepcao.jpeg"/>
+        </a-assets>
+
+        <a-camera position="0 1 0" id="cameraCena2">
+            <a-cursor intersection-spawn="Event: click; mixin:voxel;"></a-cursor>
+        </a-camera>
+
+        <a-sky id="img2-360" radius="30" src="#img2"></a-sky>
+    </a-scene>
+    
+</body>
+</html>

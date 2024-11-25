@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/3.4.5/three.js/build/ar-threex-location-only.js'></script>   
+    <script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/3.4.5/aframe/build/aframe-ar.js'></script>
+</head>
+<body style="margin: 0px; overflow: hidden;">
+    <a-scene vr-mode-ui="enabled: false" arjs="debugUIEnabled:false">
+        <a-assets>
+            <video id="video" src="blizzard.mp4" />
+            <!-- <img id="um" src="https://preview.redd.it/jaina-proudmoore-fanart-v0-3mjiexqc7a2d1.jpeg?width=1080&crop=smart&auto=webp&s=51d9ffca3e67b3cde0cc3b7ab45a4c0b29fb6ba8"/> -->
+        </a-assets>
+        <a-marker present="hiro" controlador>
+            <!-- <a-image width="1" height="1" rotation="-90 0 0" position="0 0 0" src="#um"></a-image> -->
+            <a-video width="1" height="1" rotation="-90 0 0" position="0 0 0" src="#video"></a-video>
+        </a-marker>
+        <a-entity camera="">
+
+        </a-entity>
+    </a-scene>
+    <script>
+        // Aguardando a interação do usuário
+        AFRAME.registerComponent(
+            'controlador', {
+                init: function(){
+                    this.toggle = false;
+                    this.vid=document.querySelector("#video");
+                    this.vid.pause();
+                },
+                tick: function(){
+                    if (this.el.object3D.visible == true){
+                        if(!this.toggle){
+                            this.toggle = true;
+                            this.vid.play();
+                        }else{
+                            this.toggle = false;
+                            this.vid.pause();
+                        }
+                    }
+                }
+            }
+        );
+      </script>
+</body>
+</html>
