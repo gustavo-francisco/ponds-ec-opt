@@ -1,7 +1,7 @@
 # Metahuman - Coadjuvante auxiliar em jogo
 
 ## Propósito do humano virtual
-SEr um mentor e figura paterna essencial na lore do caçador no universo de World of Warcraft. Este humano digital será o centro de uma experiência imersiva em VR, transportando o espectador para o coração da história e revelando os eventos que moldaram o protagonista.
+Ser um mentor e figura paterna essencial na lore do caçador no universo de World of Warcraft. Este humano digital será o centro de uma experiência imersiva em VR, transportando o espectador para o coração da história e revelando os eventos que moldaram o protagonista.
 
 ## Área de aplicação
 A experiência será utilizada para apresentar a lore de forma interativa, como se o espectador estivesse na floresta onde o hunter foi resgatado e treinado. Tahu'Shen atuará como narrador, guiando o público pelos momentos mais marcantes da história e conectando-os emocionalmente ao enredo.
