@@ -22,4 +22,8 @@ A experiência será utilizada para apresentar a lore de forma interativa, como 
 
 ## Vídeo do Humano Virtual
 
+
+https://github.com/user-attachments/assets/45115181-1cab-43fc-a7a7-972529dfce3d
+
+
 ## Áudio do Humano Virtual
